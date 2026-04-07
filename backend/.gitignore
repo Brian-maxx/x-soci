@@ -1,0 +1,6 @@
+# Logs
+logs
+*.log
+
+# SQL
+db.sqlite3

@@ -1,0 +1,18 @@
+.social-container {
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-title {
+  color: black;
+  text-shadow: 0 2px 4px rgb(255, 255, 255);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.social-description {
+  color: black;
+  text-shadow: 0 0 18px rgb(255, 255, 255);
+  font-size: 1.2rem;
+}

@@ -1,0 +1,76 @@
+.header-container {
+    width: 100%;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-text {
+  font-family: "Stalinist One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.header-nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    background: rgba(208, 207, 207, 0.265);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: #6b7280; /* tương đương text-gray-500 */
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-link.active {
+    color: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.993);
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+.header-profile {
+    width: 180px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-icon {
+    width: 50px;
+    cursor: pointer;
+}
