@@ -4,3 +4,7 @@ logs
 
 # SQL
 db.sqlite3
+
+#cache
+__pycache__/
+*.pyc

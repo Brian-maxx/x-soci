@@ -18,7 +18,7 @@ function Auth() {
     }
 
     return (
-        <div className='h-screen w-screen flex items-center justify-center bg-[url("/src/assets/background.png")] bg-cover bg-center bg-no-repeat'>
+        <div className='h-screen w-screen flex items-center justify-center bg-cover bg-center bg-no-repeat'>
             {isLogin 
                 ? <Login onSwitch={handleSwitch} onForgotPassword={handleForgotPassword} />
                 : isForgotPassword

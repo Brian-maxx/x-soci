@@ -1,7 +1,9 @@
 :root {
-    --link-color: rgb(216, 216, 216);
-    --link-hover-color: rgb(245, 245, 245);
-    --button-color: rgb(214, 214, 214);
+    --primary-bg: rgba(255, 255, 255, 0.7);;
+    --label-color: rgb(255, 255, 255);
+    --link-color: rgb(240, 240, 240);
+    --link-hover-color: rgb(255, 255, 255);
+    --button-color: rgb(240, 240, 240);
     --button-hover-color: rgb(255, 255, 255);
 }
 
@@ -34,8 +36,10 @@ input:focus {
     justify-content: center;
     align-items: center;
     font-size: 60px;
+    color: rgb(255, 255, 255);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
 }
 
 .login-form {
@@ -64,8 +68,8 @@ input:focus {
     align-items: center;
     font-size: 1.4rem;
     font-weight: 400;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+    color: var(--label-color);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .login-input {
@@ -106,6 +110,7 @@ input:focus {
 
 .login-forgot-password-link:hover {
     color: var(--link-hover-color);
+    transform: scale(1.05);
 }
 
 .login-button-container {
@@ -127,7 +132,7 @@ input:focus {
     outline: none;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: var(--button-color);
+    background: rgba(255, 255, 255, 0.7);
     color: rgb(2, 2, 2);
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -146,11 +151,12 @@ input:focus {
     align-items: center;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    gap: 5px;
+    gap: 10px;
 }
 
 .login-register-container p {
     font-size: 1.2rem;
+    color: var(--primary-bg)
 }
 
 .login-register-link {
@@ -171,6 +177,7 @@ input:focus {
 
 .login-register-link:hover {
     color: var(--link-hover-color);
+    transform: scale(1.05);
 }
 
 .register-container {
@@ -191,8 +198,10 @@ input:focus {
     justify-content: center;
     align-items: center;
     font-size: 60px;
+    color: rgb(255, 255, 255);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
 }
 
 .register-form {
@@ -227,8 +236,8 @@ input:focus {
     align-items: center;
     font-size: 1.4rem;
     font-weight: 400;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+    color: var(--label-color);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .register-input {
@@ -262,7 +271,7 @@ input:focus {
     outline: none;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: var(--button-color);
+    background: rgba(255, 255, 255, 0.7);
     color: rgb(2, 2, 2);
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -293,11 +302,12 @@ input:focus {
     align-items: center;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    gap: 5px;
+    gap: 10px;
 }
 
 .register-login-container p {
     font-size: 1.2rem;
+    color: var(--primary-bg);
 }
 
 .login-link {
@@ -314,10 +324,12 @@ input:focus {
     transition: 0.2s ease-in-out;
     cursor: pointer;
     background: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.377);
 }
 
 .login-link:hover {
     color: var(--link-hover-color);
+    transform: scale(1.05);
 }
 
 .forgot-password-container {
@@ -339,8 +351,10 @@ input:focus {
     justify-content: center;
     align-items: center;
     font-size: 60px;
+    color: rgb(255, 255, 255);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
 }
 
 .forgot-password-form {
@@ -367,8 +381,8 @@ input:focus {
     align-items: center;
     font-size: 1.4rem;
     font-weight: 400;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+    color: var(--label-color);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .forgot-password-input {
@@ -401,7 +415,7 @@ input:focus {
     outline: none;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: var(--button-color);
+    background: rgba(255, 255, 255, 0.7);
     color: rgb(2, 2, 2);
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -420,9 +434,10 @@ input:focus {
     align-items: center;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    gap: 5px;
+    gap: 10px;
 }
 
 .forgot-password-login-container p {
     font-size: 1.2rem;
+    color: var(--primary-bg)
 }

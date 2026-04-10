@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'products',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'core.middleware.APILoggerMiddleware',
     'products.middleware.ProductValidationMiddleware',
+    'users.middleware.UserValidationMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
