@@ -1,11 +1,11 @@
 :root {
-    --liquid-color: rgba(255, 255, 255, 0.2);
+    --liquid-color: rgba(255, 255, 255, 0.333);
 }
 
 .app-container {
     min-height: 100vh;
     max-width: 100vw;
-    background-image: url('assets/img/background.png');
+    background-image: url('assets/img/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,4 +66,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.long-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

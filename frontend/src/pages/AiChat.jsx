@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import '../styles/AiChat.css'; // Import CSS
 import { IoAddCircleOutline } from "react-icons/io5";
-import { BsFillSendFill } from "react-icons/bs";
+import { BsSend } from "react-icons/bs";
 import AiChatHistory from '../components/AiChatHistory';
+import AiChatMessage from '../components/AiChatMessage';
 
 function AiChat() {
   const [products, setProducts] = useState([]);
@@ -23,14 +24,14 @@ function AiChat() {
         </div>
         <div className="chat-container glass-liquid">
           <div className="chat-interface">
-          
+              <AiChatMessage />
           </div>
           <div className="chat-input">
             <div className="input-feature">
                 <IoAddCircleOutline className="feature-icon" />
             </div>
             <input className='input-textarea' placeholder='Nhập tin nhắn...'></input>
-            <button className='input-btn'><BsFillSendFill /></button>
+            <button className='input-btn'><BsSend /></button>
           </div>
         </div>
       </div>
