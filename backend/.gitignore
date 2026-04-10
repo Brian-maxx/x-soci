@@ -6,4 +6,5 @@ logs
 db.sqlite3
 
 #cache
-*/__pycache__/
+__pycache__/
+*.pyc
