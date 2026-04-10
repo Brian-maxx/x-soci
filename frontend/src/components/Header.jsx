@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
             <header className="p-6">
-                <div className="header-container">
+                <div className="header-container glass-liquid">
                     <div className='header-logo'>
                         <Link to='/social' className='logo-text'>X-SO</Link>
                     </div>
