@@ -13,10 +13,10 @@ function Header() {
                         <Link to='/social' className='logo-text'>X-SO</Link>
                     </div>
                     <nav className='header-nav-links rounded-2xl text-xl'>
-                        <Link to="/social" className={`nav-link ${location.pathname === "/social" ? "active" : ""}`}>Cộng đồng</Link>
-                        <Link to="/explore" className={`nav-link ${location.pathname === "/explore" ? "active" : ""}`}>Khám phá</Link>
-                        <Link to="/ai-chat" className={`nav-link ${location.pathname === "/ai-chat" ? "active" : ""}`}>AI Chat</Link>
-                        <Link to="/practice" className={`nav-link ${location.pathname === "/practice" ? "active" : ""}`}>Luyện tập</Link>
+                        <Link to="/social" className={`nav-link ${location.pathname === "/social" ? "glass-active" : ""}`}>Cộng đồng</Link>
+                        {/* <Link to="/explore" className={`nav-link ${location.pathname === "/explore" ? "active" : ""}`}>Khám phá</Link> */}
+                        <Link to="/ai-chat" className={`nav-link ${location.pathname === "/ai-chat" ? "glass-active" : ""}`}>AI Chat</Link>
+                        <Link to="/practice" className={`nav-link ${location.pathname === "/practice" ? "glass-active" : ""}`}>Luyện từ</Link>
                     </nav>
                     <div className='header-profile'>
                         <img src={userIcon} alt="User Profile" className='profile-icon' />
