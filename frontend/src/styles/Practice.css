@@ -1,0 +1,237 @@
+.practice-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.practice-header {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.practice-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-shadow: 0px 1px 4px rgba(255, 255, 255, 0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 1.6rem;
+}
+
+.practice-title p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #272727;
+  display: flex;
+}
+
+.practice-components {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.practice-components div {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  color: rgb(105, 98, 98);
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.practice-components div:hover {
+  transform: scale(1.2);
+}
+
+.practice-components .glass-active {
+  color: rgb(0, 0, 0);
+}
+
+.practice-item {
+  flex: 1;
+  width: 95%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.mode-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-word-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  min-width: 150px;
+  padding: 5px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #389fff, #0a52be);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.add-word-btn:hover {
+  background: linear-gradient(to right, #51a9fc, #1e69db);
+}
+
+.mode-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  font-weight: bold;
+  align-items: center;
+  gap: 5px;
+}
+
+.mode-icon {
+  color: rgb(247, 111, 33);
+  font-size: 2rem;
+}
+
+.practice-mode {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.mode {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 0 2px 4px rgba(107, 106, 106, 0.527);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  padding: 8px;
+  position: relative;
+}
+
+.content{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.content-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 4px rgba(5, 5, 5, 0.274);
+}
+
+.content-description {
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 4px rgba(5, 5, 5, 0.274);
+}
+
+.mode:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s ease-in-out;
+  font-size: 10rem;
+}
+
+.mode:hover .icon {
+  transform: scale(1.2);
+}
+
+.meaning-mode {
+  background: linear-gradient(to right, #14b8a6, #0ea5e9);
+}
+
+.wrapper-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.wrapper-icon-meaning-mode {
+  bottom: -33px;
+  right: -6px;
+}
+
+.contextualized-mode {
+  background: linear-gradient(to right, #c145fa, #a855f7);
+}
+
+.wrapper-icon-contextualized-mode {
+  bottom: -55px;
+  right: -20px;
+}
+
+.shadowing-mode{
+  background: linear-gradient(to right, #ff5c46, #dd360c);
+}
+
+.wrapper-icon-shadowing-mode {
+  bottom: -30px;
+  right: -7px;
+}
+
+.practice-feature {
+  width: 100%;
+  height: 100px;
+}
