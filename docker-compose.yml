@@ -7,6 +7,8 @@ services:
       - ./backend:/app
     environment:
       - DEBUG=1
+    depends_on: 
+      - mysql_db
 
   frontend:
     build: ./frontend
@@ -16,10 +18,25 @@ services:
     depends_on:
       - backend
 
-  nginx:
-    build: ./nginx
+
+  mysql_db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: '123'
+      MYSQL_DATABASE: xsoci_db
     ports:
-      - "80:80"
-    depends_on:
-      - backend
-      - frontend
+      - "33067:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql 
+
+volumes:
+  mysql_data:
+
+  # nginx:
+  #   build: ./nginx
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - backend
+  #     - frontend
