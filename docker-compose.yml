@@ -3,23 +3,45 @@ version: "3.8"
 services:
   backend:
     build: ./backend
-    volumes:
-      - ./backend:/app
     environment:
-      - DEBUG=1
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      SPRING_DATA_MONGODB_URI: ${SPRING_DATA_MONGODB_URI}
+    ports:
+      - "8088:8080"
+    depends_on:
+      - mysql_db
 
   frontend:
     build: ./frontend
     volumes:
       - ./frontend:/app
       - /app/node_modules
+    ports:
+      - "5173:5173"
     depends_on:
       - backend
 
-  nginx:
-    build: ./nginx
+
+  mysql_db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: '123'
+      MYSQL_DATABASE: xsoci_db
     ports:
-      - "80:80"
-    depends_on:
-      - backend
-      - frontend
+      - "33067:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql 
+
+volumes:
+  mysql_data:
+
+  # nginx:
+  #   build: ./nginx
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - backend
+  #     - frontend
