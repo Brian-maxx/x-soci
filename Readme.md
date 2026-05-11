@@ -1,5 +1,20 @@
 # 🚧 Project Status
 
+## Introduction
+
+This project is a community-driven platform designed to connect users through communication, learning, and career opportunities. The system aims to provide an environment where users can exchange knowledge, build relationships, and improve their skills with the support of AI technologies.
+
+Main features of the platform include:
+
+Community forums for discussions and knowledge sharing
+Job searching and recruitment support
+Friend management and real-time chat functionality
+AI-powered conversation and assistant features
+Vocabulary learning and language improvement tools
+AI training and integration for future intelligent features
+
+The project is being developed with scalability and long-term AI integration in mind, combining modern web technologies with machine learning capabilities to create an interactive and intelligent user experience.
+
 ## Overview
 
 This project is currently under active development and is being designed as a scalable system with future AI integration capabilities. The application focuses on building a stable core architecture before implementing advanced AI training and automation features.
