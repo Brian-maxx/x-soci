@@ -29,22 +29,25 @@ public class Role {
     @Column(name = "role_id")
     private Long id;
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "role_name", nullable = false, length = 255)
     private String roleName;
 
     @OneToMany(mappedBy = "role")
     private List<Accessibility> accesses;
 
     @Builder.Default
-    @Column(nullable = false)
+    @Column(name = "is_active", nullable = false)
     private Boolean isActive = true;
 
     @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
+    @Column(name = "deleted_at")
     private LocalDateTime deletedAt;
 
     @ManyToOne
