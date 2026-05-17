@@ -1,5 +1,7 @@
 package com.xsoci.backend.entity;
 
+import java.util.*;
+
 import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -10,15 +12,9 @@ import lombok.*;
 
 @Entity
 @Table(
-    name = "accessibilities",
-    indexes = {
-        @Index(name = "idx_access_path", columnList = "access_path")
-    },
+    name = "roles",
     uniqueConstraints = {
-        @UniqueConstraint(
-            name = "uk_role_accessibility",
-            columnNames = {"role_id", "access_path", "method"}
-        )
+        @UniqueConstraint(name = "uk_role_name",columnNames = "role_name")
     }
 )
 
@@ -27,21 +23,17 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Accessibility {
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "access_id")
+    @Column(name = "role_id")
     private Long id;
 
     @Column(nullable = false, length = 255)
-    private String accessPath;
+    private String roleName;
 
-    @Column(nullable = false, length = 10)
-    private String method;
-
-    @ManyToOne
-    @JoinColumn(name = "role_id", nullable = false)
-    private Role role;
+    @OneToMany(mappedBy = "role")
+    private List<Accessibility> accesses;
 
     @Builder.Default
     @Column(nullable = false)
