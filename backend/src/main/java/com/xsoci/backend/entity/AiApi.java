@@ -10,14 +10,14 @@ import lombok.*;
 
 @Entity
 @Table(
-    name = "apis",
+    name = "ai_apis",
     indexes = {
-        @Index(name = "idx_api_endpoint", columnList = "api_endpoint")
+        @Index(name = "idx_ai_api_endpoint", columnList = "ai_api_endpoint")
     },
     uniqueConstraints = {
         @UniqueConstraint(
-            name = "uk_api_endpoint_method",
-            columnNames = {"api_endpoint", "method"}
+            name = "uk_ai_api_endpoint_method",
+            columnNames = {"ai_api_endpoint", "ai_api_method"}
         )
     }
 )
@@ -28,34 +28,38 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 
-public class Api {
+public class AiApi {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "api_id")
+    @Column(name = "ai_api_id")
     private Long id;
     
-    @Column(nullable = false, length = 255)
-    private String apiName;
+    @Column(name = "ai_api_name", nullable = false, length = 255)
+    private String aiApiName;
 
-    @Column(nullable = false, length = 255)
-    private String apiEndpoint;
+    @Column(name = "ai_api_endpoint", nullable = false, length = 255)
+    private String aiApiEndpoint;
 
-    @Column(nullable = false, length = 10)
-    private String method;
+    @Column(name = "ai_api_method", nullable = false, length = 10)
+    private String aiApiMethod;
 
     @Builder.Default
-    @Column(nullable = false)
+    @Column(name = "is_active", nullable = false)
     private Boolean isActive = true;
 
-    @Column(nullable = true, length = 255)
+    @Column(name = "description", length = 255)
     private String description;
 
     @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
+    @Column(name = "deleted_at")
     private LocalDateTime deletedAt;
 
     @ManyToOne

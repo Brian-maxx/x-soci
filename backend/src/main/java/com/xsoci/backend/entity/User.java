@@ -33,19 +33,19 @@ public class User {
     @Column(name = "user_id")
     private Long id;
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "username", nullable = false, length = 255)
     private String username;
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "password", nullable = false, length = 255)
     private String password;
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "email", nullable = false, length = 255)
     private String email;
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "full_name", nullable = false, length = 255)
     private String fullName;
 
-    @Column(nullable = false, length = 15)
+    @Column(name = "phone_number", nullable = false, length = 15)
     private String phoneNumber;
 
     @ManyToOne
@@ -53,15 +53,18 @@ public class User {
     private Role role;
 
     @Builder.Default
-    @Column(nullable = false)
+    @Column(name = "is_active", nullable = false)
     private Boolean isActive = true;
 
     @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
+    @Column(name = "deleted_at")
     private LocalDateTime deletedAt;
 
     @ManyToOne

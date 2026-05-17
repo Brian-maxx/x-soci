@@ -33,10 +33,10 @@ public class Accessibility {
     @Column(name = "access_id")
     private Long id;
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "access_path", nullable = false, length = 255)
     private String accessPath;
 
-    @Column(nullable = false, length = 10)
+    @Column(name = "method", nullable = false, length = 10)
     private String method;
 
     @ManyToOne
@@ -44,15 +44,18 @@ public class Accessibility {
     private Role role;
 
     @Builder.Default
-    @Column(nullable = false)
+    @Column(name = "is_active", nullable = false)
     private Boolean isActive = true;
 
     @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
+    @Column(name = "deleted_at")
     private LocalDateTime deletedAt;
 
     @ManyToOne
