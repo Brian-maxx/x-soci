@@ -2,7 +2,6 @@ package com.xsoci.backend.service.impl;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import com.xsoci.backend.dto.request.RegisterRequest;
 import com.xsoci.backend.dto.response.UserResponse;
 import com.xsoci.backend.entity.User;
@@ -38,8 +37,8 @@ public class UserServiceImpl implements UserService {
             validationUtil.throwNotMatch(FieldConstants.PASSWORD, FieldConstants.CONFIRM_PASSWORD);
         }
 
-        Role role = roleRepository.findByRoleName("USER")
-            .orElseThrow(() -> new RuntimeException("Role not found"));
+        Role role = roleRepository.findByRoleName(RoleConstants.USER)
+            .orElseThrow(() -> validationUtil.throwNotFound(FieldConstants.ROLE));
 
         User user = User.builder()
             .username(registerRequest.getUsername())

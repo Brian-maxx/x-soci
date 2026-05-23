@@ -27,4 +27,13 @@ public class ValidationUtil {
             )
         );
     }
+
+    public RuntimeException throwNotFound(String field) {
+        return new CustomException(
+            messageUtil.getMessage(
+                "validation.not_found",
+                new Object[]{field}
+            )
+        );
+    }
 }
