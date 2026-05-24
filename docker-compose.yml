@@ -3,6 +3,9 @@ version: "3.8"
 services:
   backend:
     build: ./backend
+    working_dir: /app
+    volumes:
+      - ./backend:/app
     environment:
       SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
       SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}

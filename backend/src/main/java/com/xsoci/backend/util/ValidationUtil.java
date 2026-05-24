@@ -28,10 +28,46 @@ public class ValidationUtil {
         );
     }
 
-    public RuntimeException throwNotFound(String field) {
-        return new CustomException(
+    public void throwNotFound(String field) {
+        throw new CustomException(
             messageUtil.getMessage(
                 "validation.not_found",
+                new Object[]{field}
+            )
+        );
+    }
+
+    public void throwInvalid(String field) {
+        throw new CustomException(
+            messageUtil.getMessage(
+                "validation.invalid",
+                new Object[]{field}
+            )
+        );
+    }
+
+    public void throwInactive(String field) {
+        throw new CustomException(
+            messageUtil.getMessage(
+                "validation.inactive",
+                new Object[]{field}
+            )
+        );
+    }
+
+    public void throwIsDeleted(String field) {
+        throw new CustomException(
+            messageUtil.getMessage(
+                "validation.is_deleted",
+                new Object[]{field}
+            )
+        );
+    }
+
+    public void throwNotAllowed(String field) {
+        throw new CustomException(
+            messageUtil.getMessage(
+                "validation.not_allowed",
                 new Object[]{field}
             )
         );
