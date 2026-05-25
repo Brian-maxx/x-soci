@@ -1,0 +1,1591 @@
+2026-05-25 08:26:57 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:26:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:26:58 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1f52e811-2ad3-48b3-bbda-bec0f599ff4f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:26:59 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.67 seconds (process running for 5025.757)
+2026-05-25 08:27:37 INFO  c.x.b.service.impl.UserServiceImpl - New password: 58GNofFs
+2026-05-25 08:27:52 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.xsoci.backend.exception.CustomException: test2@gmail.com is inactive]
+2026-05-25 08:30:27 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:30:27 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:30:27 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:30:31 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:30:32 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:30:33 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6d705f2b-952b-4b06-a3fd-f8ee532b348a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:30:33 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.579 seconds (process running for 5240.523)
+2026-05-25 08:31:09 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:31:09 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:31:09 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:31:17 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:31:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:31:19 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9a102f50-708d-46d8-85c7-ee82c88fcf23
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:31:20 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 11.665 seconds (process running for 5287.504)
+2026-05-25 08:33:27 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:33:27 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:33:27 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:33:30 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:33:31 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2026-05-25 08:33:31 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xsoci.backend.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@355d65da]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ChangePasswordRequest
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ChangePasswordRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 44 common frames omitted
+2026-05-25 08:34:31 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:34:31 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:34:31 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:34:35 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:34:35 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2026-05-25 08:34:35 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xsoci.backend.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@37fedaa4]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ChangePasswordRequest
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ChangePasswordRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 44 common frames omitted
+2026-05-25 08:34:44 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:34:44 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:34:44 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:34:48 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:34:48 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2026-05-25 08:34:48 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xsoci.backend.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4e09a3fe]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ChangePasswordRequest
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ChangePasswordRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 44 common frames omitted
+2026-05-25 08:35:57 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:35:57 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:35:57 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:36:01 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:36:02 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2026-05-25 08:36:02 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xsoci.backend.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@535b5bb2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ChangePasswordRequest
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ChangePasswordRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 44 common frames omitted
+2026-05-25 08:36:08 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:36:08 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:36:08 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:36:12 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:36:13 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2026-05-25 08:36:13 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xsoci.backend.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@d7697b6]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ChangePasswordRequest
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ChangePasswordRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 44 common frames omitted
+2026-05-25 08:36:58 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:36:58 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:36:58 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:37:02 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:37:03 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2026-05-25 08:37:03 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xsoci.backend.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c9c4746]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ChangePasswordRequest
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ChangePasswordRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 44 common frames omitted
+2026-05-25 08:38:53 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:38:53 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:38:53 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:38:59 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:38:59 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+2026-05-25 08:38:59 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xsoci.backend.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4f091b78]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ChangePasswordRequest
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ChangePasswordRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 44 common frames omitted
+2026-05-25 08:39:11 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:39:11 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:39:11 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:39:16 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:39:17 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:39:17 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cc2badff-b505-4071-b9d1-b0cd7a33e78a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:39:18 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.189 seconds (process running for 5765.088)
+2026-05-25 08:39:40 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:39:40 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:39:40 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:39:44 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:39:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:39:46 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a90addff-08ee-47b3-90e0-e9a2543cf0f1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:39:47 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.313 seconds (process running for 5794.225)
+2026-05-25 08:41:03 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:41:03 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:41:03 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:41:09 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:41:10 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:41:10 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7423faa6-26b3-42e5-87a2-f16a8d4c768f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:41:12 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.886 seconds (process running for 5879.17)
+2026-05-25 08:41:29 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:41:29 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:41:29 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:41:35 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:41:36 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:41:37 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 415a023f-d4bc-4946-a954-2c78257517fb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:41:37 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.614 seconds (process running for 5904.75)
+2026-05-25 08:41:57 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:41:57 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:41:57 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:42:01 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:42:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:42:03 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 07b249c6-1095-42b4-93a1-d094331f9745
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:42:05 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.067 seconds (process running for 5932.028)
+2026-05-25 08:42:08 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:42:08 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:42:08 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:42:12 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:42:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:42:13 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 40c940d2-1f27-4d94-8115-7cd126be1e66
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:42:13 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 5.357 seconds (process running for 5940.635)
+2026-05-25 08:42:17 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:42:17 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:42:17 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:42:21 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:42:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:42:22 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 543a6c24-3566-4d59-b18c-177e47b43ee5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:42:22 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 5.085 seconds (process running for 5949.427)
+2026-05-25 08:43:39 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:43:39 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:43:39 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:43:44 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:43:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:43:45 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6b6eeffb-8c57-4255-b69e-828d4ff8dfbc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:43:48 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.363 seconds (process running for 6035.076)
+2026-05-25 08:43:51 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:43:51 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:43:51 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:43:56 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:43:57 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:43:58 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 768fb0d5-6eb6-40ff-adff-d3465865f559
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:44:01 WARN  o.s.c.i.s.PathMatchingResourcePatternResolver - Failed to search in directory [/app/target/classes/com/xsoci/backend] for files matching pattern [**/*.class]: java.io.UncheckedIOException: java.nio.file.NoSuchFileException: /app/target/classes/com/xsoci/backend/util/PasswordGenerator.class
+2026-05-25 08:44:01 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.292 seconds (process running for 6048.465)
+2026-05-25 08:44:05 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:44:05 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:44:05 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:44:11 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:44:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:44:12 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8885a77e-45ad-45fc-952d-32e1a2e6d6b9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:44:14 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.682 seconds (process running for 6061.038)
+2026-05-25 08:45:31 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:45:31 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:45:31 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:45:34 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:45:35 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:45:36 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9ccaec1d-bfdc-4e90-bfdb-53f5c5822db8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:45:37 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.203 seconds (process running for 6144.071)
+2026-05-25 08:48:36 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:48:36 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:48:36 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:48:40 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:48:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:48:42 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0f41c528-a80b-411b-9367-ec7cffe5cdae
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:48:43 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.186 seconds (process running for 6329.906)
+2026-05-25 08:49:03 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:49:03 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:49:03 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:49:09 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:49:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:49:10 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2324eb61-26a0-4379-b76e-ace65c69964c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:49:11 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.838 seconds (process running for 6358.161)
+2026-05-25 08:50:32 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:50:32 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:50:32 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:50:36 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:50:37 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:50:37 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1bdad20e-cd46-41d5-af4e-6080cdb04d2d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:50:38 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.423 seconds (process running for 6445.28)
+2026-05-25 08:50:52 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:50:52 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:50:52 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:50:55 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:50:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:50:57 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 29f9739d-91ed-43ee-88b0-92216e331de8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:50:57 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 5.926 seconds (process running for 6464.685)
+2026-05-25 08:51:10 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:51:10 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:51:10 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:51:17 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:51:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:51:18 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5ad5e2df-7b73-4922-b920-c3757c113237
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:51:19 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.269 seconds (process running for 6486.583)
+2026-05-25 08:51:34 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:51:34 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:51:34 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:51:39 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:51:40 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:51:40 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 757c5bcf-0872-44f0-96d9-61cee667c2c2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:51:42 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.93 seconds (process running for 6508.972)
+2026-05-25 08:57:59 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:57:59 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:57:59 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:58:05 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:58:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:58:07 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: aeba01a3-17b7-43cd-b2b1-b40120cb8279
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:58:08 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.769 seconds (process running for 6895.434)
+2026-05-25 08:58:18 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:58:18 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:58:18 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 08:58:23 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 08:58:24 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 08:58:25 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b11dd257-c02b-4b92-a07e-c99e9ca9cf42
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 08:58:26 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.619 seconds (process running for 6913.253)
+2026-05-25 08:59:55 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 08:59:55 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 08:59:55 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:00:03 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:00:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:00:04 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0613b3db-00a9-4666-8782-7acd685d1b5e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:00:06 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 11.064 seconds (process running for 7013.154)
+2026-05-25 09:00:51 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:00:51 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:00:51 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:00:55 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:00:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:00:56 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 37a098ea-eebc-4da6-9b38-587ea255c623
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:00:57 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.887 seconds (process running for 7064.832)
+2026-05-25 09:02:18 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:02:18 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:02:18 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:02:23 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:02:24 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:02:25 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cad5c101-dbe3-4472-9558-128568560560
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:02:26 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.025 seconds (process running for 7153.148)
+2026-05-25 09:02:31 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:02:31 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:02:31 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:02:38 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:02:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:02:40 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2f6b23bc-a0bf-4e6f-8f0b-8a0de877e0d5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:02:40 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.723 seconds (process running for 7167.614)
+2026-05-25 09:02:48 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:02:48 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:02:48 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:02:53 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:02:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:02:54 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 28ea93a3-cbbc-4d4a-a7e4-ed85525883a8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:02:56 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.476 seconds (process running for 7182.911)
+2026-05-25 09:03:14 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:03:14 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:03:14 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:03:19 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:03:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:03:20 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 89ba231a-686c-4d7e-b7df-62b477924fc3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:03:21 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.9 seconds (process running for 7207.948)
+2026-05-25 09:03:53 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:03:53 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:03:53 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:03:56 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:03:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:03:59 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 758298a8-00f6-48ac-a5ff-62530d0d2a15
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:04:00 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.309 seconds (process running for 7247.774)
+2026-05-25 09:04:04 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:04:04 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:04:04 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:04:11 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:04:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:04:13 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0f9b2609-406f-459e-9b8e-b14ad4c64660
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:04:14 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.714 seconds (process running for 7261.052)
+2026-05-25 09:05:56 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:05:56 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:05:56 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:06:00 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:06:01 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+2026-05-25 09:06:01 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+
+	at com.xsoci.backend.service.impl.UserServiceImpl.<init>(UserServiceImpl.java:33)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:210)
+	... 40 common frames omitted
+2026-05-25 09:06:08 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:06:08 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:06:08 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:06:14 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:06:15 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+2026-05-25 09:06:15 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+
+	at com.xsoci.backend.service.impl.UserServiceImpl.<init>(UserServiceImpl.java:33)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:210)
+	... 40 common frames omitted
+2026-05-25 09:06:51 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:06:51 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:06:51 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:06:56 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:06:57 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+2026-05-25 09:06:57 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+
+	at com.xsoci.backend.service.impl.UserServiceImpl.<init>(UserServiceImpl.java:33)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:210)
+	... 40 common frames omitted
+2026-05-25 09:08:24 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:08:24 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:08:24 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:08:31 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:08:31 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:08:32 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 76aea21c-4f53-4a5a-8368-d26f261b8954
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:08:33 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.989 seconds (process running for 7520.185)
+2026-05-25 09:10:05 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:10:05 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:10:05 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:10:12 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:10:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:10:13 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2716beb8-55ea-4e04-9681-5495c5173e95
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:10:14 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.266 seconds (process running for 7621.486)
+2026-05-25 09:17:48 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:17:48 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:17:48 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:17:55 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:17:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:17:56 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cf00eaa5-30cc-45ab-8d6c-f3755aa27baa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:17:58 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.394 seconds (process running for 8085.001)
+2026-05-25 09:24:07 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:24:07 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:24:07 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:24:14 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:24:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:24:16 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9271df5d-0e91-45f7-908a-60c8de53d628
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:24:18 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 11.158 seconds (process running for 8465.025)
+2026-05-25 09:24:23 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:24:23 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:24:23 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:24:28 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:24:29 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:24:30 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0b893356-3fe7-4bcc-b673-03ff45b684ef
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:24:31 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.869 seconds (process running for 8478.446)
+2026-05-25 09:27:24 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:27:24 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:27:24 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:27:31 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:27:32 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:27:33 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d70c8c4d-2310-4527-9d4d-b5b6a698a12a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:27:34 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.859 seconds (process running for 8661.259)
+2026-05-25 09:29:15 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:29:15 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:29:15 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:29:19 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:29:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:29:21 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d8b75306-943d-460a-87d5-740c63b09e3b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:29:22 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.752 seconds (process running for 8769.474)
+2026-05-25 09:34:35 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:34:35 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:34:35 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:34:41 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:34:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:34:43 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5bf603a8-ce97-4e1d-96a4-f9b8302cf9c1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:34:45 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.008 seconds (process running for 9092.038)
+2026-05-25 09:35:41 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:35:41 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:35:41 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:35:45 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:35:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:35:47 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8cb9c77d-1684-4a4b-a849-5e9fd58f636d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:35:48 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.41 seconds (process running for 9155.262)
+2026-05-25 09:36:47 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:36:47 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:36:47 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:36:55 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:36:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:36:56 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 817f6a75-b414-42fb-8dac-cbbea6c858e7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:36:58 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.426 seconds (process running for 9225.185)
+2026-05-25 09:37:39 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:37:39 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:37:39 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:37:45 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:37:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:37:48 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e26c15c9-cb04-49c3-b83d-2abc989af96c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:37:49 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.378 seconds (process running for 9276.271)
+2026-05-25 09:38:17 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:38:17 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:38:17 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:38:24 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:38:25 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:38:25 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 14d45ead-2d58-4169-9904-86b68a3b6588
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:38:27 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.357 seconds (process running for 9314.181)
+2026-05-25 09:42:33 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:42:33 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:42:33 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:42:38 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:42:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:42:40 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 18ca822a-98d4-4860-a4c6-16b99c6d3f51
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:42:41 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.908 seconds (process running for 9568.656)
+2026-05-25 09:45:54 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:45:54 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:45:54 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:46:01 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:46:03 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:46:04 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7c1b10b5-3bc3-4ef8-b257-991e50def42f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:46:05 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 12.26 seconds (process running for 9772.521)
+2026-05-25 09:46:42 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:46:42 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:46:42 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:46:50 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:46:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:46:52 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 514c012b-8f73-4d4d-a138-2842aedb8b99
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:46:53 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 11.557 seconds (process running for 9820.569)
+2026-05-25 09:47:08 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:47:08 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:47:08 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:47:14 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:47:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:47:16 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0c4a358d-030f-4447-8010-c6d02c5690f4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:47:17 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.799 seconds (process running for 9844.135)
+2026-05-25 09:48:16 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:48:16 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:48:16 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:48:20 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:48:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:48:22 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3c816f2c-1e1c-4724-b38f-828d522bc611
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:48:23 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.821 seconds (process running for 9910.173)
+2026-05-25 09:53:05 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:53:05 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:53:05 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:53:11 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:53:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:53:12 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 316649f9-2fc0-414c-b9e8-2bbd09ed8a03
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:53:13 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.471 seconds (process running for 10200.542)
+2026-05-25 09:56:48 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:56:48 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:56:48 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:56:57 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:56:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:56:59 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5830f93c-6979-4e1f-9beb-066f25bbd626
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:57:00 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 13.852 seconds (process running for 10427.9)
+2026-05-25 09:57:24 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:57:24 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:57:24 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:57:31 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:57:32 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:57:32 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ea85e60e-2e81-4b45-8903-1d15ad126c88
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:57:34 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.181 seconds (process running for 10461.129)
+2026-05-25 09:58:13 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:58:13 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:58:13 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:58:19 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:58:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:58:20 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 42731eb1-4acc-46a6-bd0f-a5e9fef6bc94
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:58:21 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.137 seconds (process running for 10508.722)
+2026-05-25 09:59:37 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 09:59:37 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 09:59:37 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 09:59:42 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 09:59:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 09:59:43 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4243ec35-d5ba-452d-a277-9fe527640ff8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 09:59:44 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.931 seconds (process running for 10591.846)
+2026-05-25 10:00:16 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:00:16 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:00:16 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:00:21 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:00:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:00:22 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c4898bca-f290-4bcd-96ed-eec238abde31
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:00:24 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.186 seconds (process running for 10631.149)
+2026-05-25 10:01:53 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:01:53 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:01:53 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:02:01 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:02:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:02:02 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f4d496d2-bc4c-4772-8b33-14495eaeeb00
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:02:04 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.676 seconds (process running for 10731.316)
+2026-05-25 10:02:17 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:02:17 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:02:17 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:02:21 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:02:23 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+2026-05-25 10:02:23 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/app/target/classes/com/xsoci/backend/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/app/target/classes/com/xsoci/backend/service/impl/UserServiceImpl.class]: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.xsoci.backend.service.impl.UserServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+
+	at com.xsoci.backend.service.impl.UserServiceImpl.<init>(UserServiceImpl.java:1)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:210)
+	... 40 common frames omitted
+2026-05-25 10:02:58 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:02:58 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:02:58 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:03:04 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:03:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:03:06 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: dfded1e2-0470-479e-a83c-aa14675c6908
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:03:07 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.469 seconds (process running for 10794.429)
+2026-05-25 10:04:45 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:04:45 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:04:45 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:04:50 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:04:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:04:51 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 074e4a12-e958-4865-9c6d-b5256ce6b977
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:04:52 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 7.305 seconds (process running for 10899.995)
+2026-05-25 10:06:14 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:06:14 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:06:14 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:06:21 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:06:23 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:06:24 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 381d755d-3d65-441d-902f-751e5faf4cb7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:06:25 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 11.372 seconds (process running for 10992.696)
+2026-05-25 10:06:33 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:06:33 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:06:33 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:06:38 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:06:40 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:06:41 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7778b7c0-58c5-41a3-807a-95235e017137
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:06:43 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.244 seconds (process running for 11010.158)
+2026-05-25 10:06:57 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:06:57 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:06:57 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:07:03 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:07:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:07:04 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b66cacc1-f9a4-4907-9e04-7999703f3a51
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:07:05 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.269 seconds (process running for 11032.782)
+2026-05-25 10:09:49 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:09:49 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:09:49 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:09:53 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:09:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:09:54 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: be35d9d5-5939-48ea-8766-cae81d1b8416
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:09:55 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 6.543 seconds (process running for 11202.504)
+2026-05-25 10:12:40 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:12:40 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:12:40 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:12:45 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:12:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:12:46 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a36bc42a-61e1-4726-aeb9-16634b00ec94
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:12:47 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 8.163 seconds (process running for 11374.912)
+2026-05-25 10:13:34 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:13:34 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:13:34 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:13:42 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:13:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:13:43 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 71019859-e088-4d81-b1e8-5bafa4170f24
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:13:44 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 9.82 seconds (process running for 11431.459)
+2026-05-25 10:15:02 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.context.NoSuchMessageException: No message found under code 'validation.role.not_found' for locale 'en_US'.]
+2026-05-25 10:15:28 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:15:28 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:15:28 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:15:42 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:15:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:15:44 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 98149ae7-a6e2-42fb-bda0-5282ed31ece6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:15:45 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 18.177 seconds (process running for 11552.822)
+2026-05-25 10:16:04 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:16:04 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:16:04 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:16:15 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:16:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:16:16 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 13e4acce-b920-4153-a244-5769ebf6aa50
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:16:17 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 13.483 seconds (process running for 11584.849)
+2026-05-25 10:16:24 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:16:24 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:16:24 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:16:31 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:16:32 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:16:33 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 240e848b-d366-4742-83b4-b24bab685c89
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:16:34 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.632 seconds (process running for 11601.815)
+2026-05-25 10:16:56 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.context.NoSuchMessageException: No message found under code 'validation.role.not_found' for locale 'en_US'.]
+2026-05-25 10:17:54 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:17:54 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:17:54 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:18:01 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:18:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:18:03 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 98b2d954-9f39-4ec5-9e1d-1f84734c4767
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:18:04 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 10.01 seconds (process running for 11691.782)
+2026-05-25 10:18:25 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:18:25 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:18:25 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:18:35 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:18:36 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 10:18:36 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 846f759a-631e-4953-b172-6e59f0968ba1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25 10:18:38 INFO  c.xsoci.backend.BackendApplication - Started BackendApplication in 14.6 seconds (process running for 11725.896)
+2026-05-25 10:19:48 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:19:48 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:19:49 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 10:19:58 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 10:19:59 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'globalExceptionHandler' defined in file [/app/target/classes/com/xsoci/backend/exception/GlobalExceptionHandler.class]: Failed to instantiate [com.xsoci.backend.exception.GlobalExceptionHandler]: Constructor threw exception
+2026-05-25 10:19:59 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'globalExceptionHandler' defined in file [/app/target/classes/com/xsoci/backend/exception/GlobalExceptionHandler.class]: Failed to instantiate [com.xsoci.backend.exception.GlobalExceptionHandler]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.xsoci.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.xsoci.backend.exception.GlobalExceptionHandler]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The blank final field messageUtil may not have been initialized
+
+	at com.xsoci.backend.exception.GlobalExceptionHandler.<init>(GlobalExceptionHandler.java:15)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 24 common frames omitted
+2026-05-25 10:21:51 INFO  c.xsoci.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 188 (/app/target/classes started by root in /app)
+2026-05-25 10:21:51 DEBUG c.xsoci.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-25 10:21:51 INFO  c.xsoci.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"

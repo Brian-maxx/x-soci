@@ -10,9 +10,18 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class MessageUtil {
     private final MessageSource messageSource;
+
+    public String getMessage(String key) {
+        Locale locale = LocaleContextHolder.getLocale();
+
+        return messageSource.getMessage(key, null, locale);
+    }
+    
     public String getMessage(String key, Object[] args) {
         Locale locale = LocaleContextHolder.getLocale();
 
         return messageSource.getMessage(key, args, locale);
     }
+
+
 }
