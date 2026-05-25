@@ -25,6 +25,11 @@ public class RegisterRequest {
     @Pattern(regexp = RegexPattern.PASSWORD, message = "{auth.confirm-password.pattern}")
     private String confirmPassword;
 
+    @AssertTrue(message = "{auth.confirm-password.not_match}")
+    public boolean isPasswordMatching() {
+        return password != null && password.equals(confirmPassword);
+    }
+
     @NotBlank(message = "{auth.full-name.required}")
     @Size(min = 3, max = 255, message = "{auth.full-name.size}")
     private String fullName;
