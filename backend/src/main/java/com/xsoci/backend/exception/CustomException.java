@@ -1,7 +1,22 @@
 package com.xsoci.backend.exception;
 
+import org.springframework.http.HttpStatus;
+
 public class CustomException extends RuntimeException {
-    public CustomException(String message) {
+    private final String errorCode;
+    private final HttpStatus status;
+
+    public CustomException(String errorCode, String message, HttpStatus status) {
         super(message);
+        this.errorCode = errorCode;
+        this.status = status;
+    }
+
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public HttpStatus getStatus() {
+        return status;
     }
 }
