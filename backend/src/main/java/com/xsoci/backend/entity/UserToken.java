@@ -2,6 +2,8 @@ package com.xsoci.backend.entity;
 
 import java.time.LocalDateTime;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -24,7 +26,7 @@ public class UserToken {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @Column(nullable = false, unique = true, length = 1000)
+    @Column(nullable = false, unique = true, length = 255)
     private String token;
 
     @NotBlank
@@ -33,6 +35,7 @@ public class UserToken {
     @NotNull
     private LocalDateTime expiredAt;
 
-    @NotNull
+    @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 }
