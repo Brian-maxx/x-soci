@@ -23,5 +23,10 @@ public class MessageUtil {
         return messageSource.getMessage(key, args, locale);
     }
 
-
+    public String success(String field) {
+        return getMessage(
+            "server.200",
+            new Object[]{field}
+        );
+    }
 }
