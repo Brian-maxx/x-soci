@@ -14,4 +14,8 @@ public class FieldConstants {
     public static final String DELETED_AT = "Deleted At";
     public static final String CREATED_BY = "Created By";
     public static final String MODIFIED_BY = "Modified By";
+    public static final String REGISTER = "Register";
+    public static final String LOGIN = "Login";
+    public static final String FORGOT_PASSWORD = "Forgot Password";
+    public static final String CHANGE_PASSWORD = "Change Password";
 }
