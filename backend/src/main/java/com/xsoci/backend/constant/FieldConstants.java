@@ -18,4 +18,6 @@ public class FieldConstants {
     public static final String LOGIN = "Login";
     public static final String FORGOT_PASSWORD = "Forgot Password";
     public static final String CHANGE_PASSWORD = "Change Password";
+    public static final String REFRESH_TOKEN = "Refresh Token";
+    public static final String TOKEN = "Token";
 }

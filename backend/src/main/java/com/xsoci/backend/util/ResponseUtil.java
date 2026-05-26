@@ -12,4 +12,11 @@ public class ResponseUtil {
             .message(message)
             .build();
     }
+
+    public static MessageResponse fail(String message) {
+        return MessageResponse.builder()
+            .status(HttpStatus.BAD_REQUEST.value())
+            .message(message)
+            .build();
+    }
 }

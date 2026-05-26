@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Account Email</title>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f4f6f9; font-family:Arial, sans-serif;">
+
+<div style="max-width:600px; margin:40px auto; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+
+    <!-- Header -->
+    <div style="background:linear-gradient(135deg,#10b981,#22c55e); padding:20px; text-align:center; color:white;">
+        <h1 style="margin:0;">Verify Your Account</h1>
+    </div>
+
+    <!-- Body -->
+    <div style="padding:30px; color:#333;">
+
+        <h2 style="margin-top:0;">
+            Xin chào, <span th:text="${username}" style="color:#10b981;"></span>
+        </h2>
+
+        <p style="font-size:15px; line-height:1.6;">
+            Cảm ơn bạn đã đăng ký tài khoản tại hệ thống của chúng tôi.
+            Để hoàn tất quá trình đăng ký, vui lòng xác thực email của bạn.
+        </p>
+
+        <p style="font-size:15px; line-height:1.6;">
+            Nhấn vào nút bên dưới để xác minh tài khoản:
+        </p>
+
+        <div style="text-align:center; margin:25px 0;">
+            <a th:href="${verifyUrl}"
+               style="display:inline-block; padding:12px 22px; background:#10b981; color:white; text-decoration:none; border-radius:6px; font-weight:bold;">
+                Xác thực tài khoản
+            </a>
+        </div>
+
+        <div style="background:#f1f5f9; padding:15px; border-radius:8px; margin:20px 0; font-size:13px; color:#555;">
+            <p style="margin:0;">
+                Nếu bạn không thực hiện yêu cầu này, bạn có thể bỏ qua email. Tài khoản sẽ chưa được kích hoạt cho đến khi xác thực.
+            </p>
+        </div>
+
+        <p style="font-size:14px; color:#555;">
+            Chào mừng bạn đến với hệ thống!
+        </p>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#f9fafb; padding:15px; text-align:center; font-size:12px; color:#888;">
+        © 2026 XSOCI System. All rights reserved.
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -29,4 +29,11 @@ public class MessageUtil {
             new Object[]{field}
         );
     }
+
+    public String invalid(String field) {
+        return getMessage(
+            "validation.invalid",
+            new Object[]{field}
+        );
+    }
 }
