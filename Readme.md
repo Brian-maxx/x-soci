@@ -1,3 +1,11 @@
+# Demo Repository
+
+> [!NOTE]
+> This repository is for demonstration purposes only.  
+> It showcases the project structure, architecture, and coding style.  
+> Some source code, configurations, business logic, and sensitive implementation details have been omitted or simplified because the actual production code is deployed privately and cannot be fully disclosed.
+
+
 # 🚧 Project Status
 
 ## Introduction
