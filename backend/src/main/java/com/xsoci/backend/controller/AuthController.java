@@ -12,6 +12,9 @@ import com.xsoci.backend.dto.request.ChangePasswordRequest;
 import com.xsoci.backend.dto.request.ForgotPasswordRequest;
 import com.xsoci.backend.dto.request.LoginRequest;
 
+
+
+
 @RestController
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
@@ -33,14 +36,28 @@ public class AuthController {
         return ResponseEntity.ok(authService.forgotPassword(request));
     }
 
+    @GetMapping("/reset")
+    public ResponseEntity<?> verifyResetPassword(@RequestParam String token) {
+        return ResponseEntity.ok(authService.verifyResetPassword(token));
+    }
+
     @PostMapping("/change-password")
     public ResponseEntity<?> changePassword(@Valid @RequestBody ChangePasswordRequest request) {
         return ResponseEntity.ok(authService.changePassword(request));
     }
 
-    //logout
-    //refresh-token
-    //reset-password
-    //verify-email
-    //me
+    @PostMapping("/refresh")
+    public ResponseEntity<?> refresh(@RequestBody String refreshToken) {
+        return ResponseEntity.ok(authService.refreshToken(refreshToken));
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout(@RequestBody String refreshToken) {        
+        return ResponseEntity.ok(authService.logout(refreshToken));
+    }
+
+    @GetMapping("/verify")
+    public ResponseEntity<?> verifyEmail(@RequestParam String token) {
+         return ResponseEntity.ok(authService.verifyEmail(token));
+    }
 }
