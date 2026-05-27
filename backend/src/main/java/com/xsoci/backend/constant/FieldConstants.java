@@ -17,7 +17,10 @@ public class FieldConstants {
     public static final String REGISTER = "Register";
     public static final String LOGIN = "Login";
     public static final String FORGOT_PASSWORD = "Forgot Password";
+    public static final String RESET_PASSWORD = "Reset Password";
     public static final String CHANGE_PASSWORD = "Change Password";
     public static final String REFRESH_TOKEN = "Refresh Token";
     public static final String TOKEN = "Token";
+    public static final String VEFIFY_ACCOUNT = "Verify your account";
+    public static final String WELCOME = "Welcome";
 }

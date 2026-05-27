@@ -7,5 +7,5 @@ public interface MailService {
 
     void sendWelcomeMail(String to, String username);
 
-    void sendForgotPasswordMail(String to, String username);
+    void sendForgotPasswordMail(String to, String username, String token);
 }

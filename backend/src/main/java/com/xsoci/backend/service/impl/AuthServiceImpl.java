@@ -3,6 +3,11 @@ package com.xsoci.backend.service.impl;
 import org.springframework.transaction.annotation.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import lombok.RequiredArgsConstructor;
+
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.time.LocalDateTime;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -14,12 +19,14 @@ import com.xsoci.backend.service.UserService;
 import com.xsoci.backend.service.UserTokenService;
 import com.xsoci.backend.constant.FieldConstants;
 import com.xsoci.backend.constant.VariableConstants;
+import com.xsoci.backend.entity.RefreshToken;
 import com.xsoci.backend.entity.User;
 import com.xsoci.backend.entity.UserToken;
 import com.xsoci.backend.dto.request.RegisterRequest;
 import com.xsoci.backend.dto.response.AuthResponse;
 import com.xsoci.backend.dto.response.MessageResponse;
 import com.xsoci.backend.dto.response.RegisterResponse;
+import com.xsoci.backend.dto.response.UserResponse;
 import com.xsoci.backend.dto.request.LoginRequest;
 import com.xsoci.backend.dto.request.ForgotPasswordRequest;
 import com.xsoci.backend.dto.request.ChangePasswordRequest;
@@ -29,7 +36,6 @@ import com.xsoci.backend.util.StringRandomGeneratorUtil;
 import com.xsoci.backend.util.TimeUtil;
 import com.xsoci.backend.util.ResponseUtil;
 import com.xsoci.backend.util.ValidationUtil;
-
 import com.xsoci.backend.service.MailService;
 
 @Slf4j
@@ -45,6 +51,14 @@ public class AuthServiceImpl implements AuthService {
     private final ValidationUtil validationUtil;
     private final PasswordEncoder passwordEncoder;
 
+    /**
+     * Method build auth response
+     * 
+     * @param accessToken
+     * @param refreshToken
+     * @param user
+     * @return
+     */
     public AuthResponse buildAuthResponse(String accessToken, String refreshToken, User user) {
         return AuthResponse.builder()
                 .accessToken(accessToken)
@@ -55,6 +69,12 @@ public class AuthServiceImpl implements AuthService {
                 .build();
     }
 
+    /**
+     * Verify current password match
+     * 
+     * @param user
+     * @param request
+     */
     public void matchesPassword(User user, String request) {
         boolean passwordMatch = passwordEncoder.matches(request, user.getPassword());
 
@@ -63,6 +83,11 @@ public class AuthServiceImpl implements AuthService {
         }
     }
 
+    /**
+     * Verify User status valid
+     * 
+     * @param user
+     */
     public void validateUserStatus(User user) {
         boolean isActive = Boolean.TRUE.equals(user.getIsActive());
         boolean isDeleted = user.getDeletedAt() != null;
@@ -75,18 +100,22 @@ public class AuthServiceImpl implements AuthService {
         }
     }
 
+    /**
+     * Register user in the system
+     */
     @Transactional
     @Override
     public RegisterResponse register(RegisterRequest registerRequest) {
         User user = userService.createUser(registerRequest);
-        String verifyToken = StringRandomGeneratorUtil.generate(VariableConstants.MAX_STRING_LENTH);
+        String verifyToken = StringRandomGeneratorUtil.generate(VariableConstants.TOKEN_MAX_LENGTH);
         userTokenService.createUserToken(user, verifyToken, VariableConstants.TYPE_VERIFY_ACCOUNT);
-
+        
+        String encodedToken = URLEncoder.encode(verifyToken, StandardCharsets.UTF_8);
         mailService.sendVerifyMail(
                 user.getEmail(),
                 user.getUsername(),
                 TimeUtil.generateDateTime(),
-                verifyToken);
+                encodedToken);
 
         return RegisterResponse.builder()
                 .statusCode(HttpStatus.OK.value())
@@ -97,6 +126,9 @@ public class AuthServiceImpl implements AuthService {
                 .build();
     }
 
+    /**
+     * Login user
+     */
     public AuthResponse login(LoginRequest loginRequest) {
         User user = userService.getUserByEmail(loginRequest.getEmail());
 
@@ -112,17 +144,45 @@ public class AuthServiceImpl implements AuthService {
         return this.buildAuthResponse(accessToken, refreshToken, user);
     }
 
+    /**
+     * Processes the forgot password request for a user
+     */
     @Transactional
     public MessageResponse forgotPassword(ForgotPasswordRequest forgotPasswordRequest) {
         User user = userService.getUserByEmail(forgotPasswordRequest.getEmail());
-        userService.updatePassword(
-                user,
-                StringRandomGeneratorUtil.generate(VariableConstants.MIN_PASSWORD_LENGTH));
+
+        String resetToken = StringRandomGeneratorUtil.generate(VariableConstants.TOKEN_MAX_LENGTH);
+        userTokenService.createUserToken(user, resetToken, VariableConstants.TYPE_RESET_PASSWORD);
+
+        String encodedToken = URLEncoder.encode(resetToken, StandardCharsets.UTF_8);
+        mailService.sendForgotPasswordMail(user.getEmail(), user.getUsername(), encodedToken);
 
         return ResponseUtil.success(
                 messageUtil.success(FieldConstants.FORGOT_PASSWORD));
     }
 
+    /**
+     * Check user must have the token to reset your password
+     * 
+     * @param token
+     */
+    public UserResponse verifyResetPassword(String token) {
+        UserToken userToken = userTokenService.getByTokenAndType(token, VariableConstants.TYPE_RESET_PASSWORD);
+        
+        if (userToken == null) {   
+            validationUtil.throwNotFound(FieldConstants.TOKEN);
+        }
+
+        if (userToken.getExpiredAt().isBefore(LocalDateTime.now())) {
+            validationUtil.throwInvalid(FieldConstants.TOKEN);
+        }
+
+        return UserMapper.toUserResponse(userToken.getUser());
+    }
+
+    /**
+     * Process changes new password for a user
+     */
     @Transactional
     public MessageResponse changePassword(ChangePasswordRequest changePasswordRequest) {
         String email = CurrentUserUtil.getCurrentUser();
@@ -134,12 +194,28 @@ public class AuthServiceImpl implements AuthService {
                 messageUtil.success(FieldConstants.CHANGE_PASSWORD));
     }
 
-    public MessageResponse refreshToken(String token) {
+    /**
+     * Get new access & refresh token to access the system
+     * 
+     * @param token
+     */
+    public AuthResponse refreshToken(String token) {
+        RefreshToken refreshToken = refreshTokenService.getValidRefreshToken(token);
 
-        return ResponseUtil.success(
-                messageUtil.success(FieldConstants.REFRESH_TOKEN));
+        User user = refreshToken.getUser();
+
+        String accessToken = jwtService.generateAccessToken(user);
+        String refreshTokenStr = jwtService.generateRefreshToken(user);
+
+        refreshTokenService.revokeRefreshToken(token);
+        RefreshToken newRefreshToken = refreshTokenService.createRefreshToken(user, refreshTokenStr);
+
+        return this.buildAuthResponse(accessToken, newRefreshToken.getToken(), user);
     }
 
+    /**
+     * Logout
+     */
     public MessageResponse logout(String refreshToken) {
         refreshTokenService.revokeRefreshToken(refreshToken);
 
@@ -147,15 +223,23 @@ public class AuthServiceImpl implements AuthService {
                 messageUtil.success(FieldConstants.REFRESH_TOKEN));
     }
 
-    public MessageResponse verifyEmail(String param) {
+    /**
+     * Verify user must have token to active after register
+     * 
+     * @param token
+     */
+    @Transactional
+    public MessageResponse verifyEmail(String token) {
         String type = VariableConstants.TYPE_VERIFY_ACCOUNT;
-        UserToken userToken = userTokenService.getByTokenAndType(param, type);
+        UserToken userToken = userTokenService.getByTokenAndType(token, type);
         if (userToken != null) {
             User user = userToken.getUser();
 
-            userTokenService.deleteUserToken(param, type);
+            userTokenService.deleteUserToken(token, type);
 
             userService.activeUser(user.getEmail());
+
+            mailService.sendWelcomeMail(user.getEmail(), user.getUsername());
 
             return ResponseUtil.success(
                     messageUtil.success(FieldConstants.TOKEN));

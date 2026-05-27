@@ -25,6 +25,10 @@ public class RefreshToken {
     private User user;
 
     private LocalDateTime expiredAt;
-    private boolean revoked;
+
+    @Builder.Default
+    @Column(nullable = false)
+    private boolean revoked = false;
+
     private LocalDateTime createdAt;
 }

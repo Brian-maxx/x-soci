@@ -36,6 +36,11 @@ public class AuthController {
         return ResponseEntity.ok(authService.forgotPassword(request));
     }
 
+    @GetMapping("/reset")
+    public ResponseEntity<?> verifyResetPassword(@RequestParam String token) {
+        return ResponseEntity.ok(authService.verifyResetPassword(token));
+    }
+
     @PostMapping("/change-password")
     public ResponseEntity<?> changePassword(@Valid @RequestBody ChangePasswordRequest request) {
         return ResponseEntity.ok(authService.changePassword(request));
@@ -52,9 +57,7 @@ public class AuthController {
     }
 
     @GetMapping("/verify")
-    public ResponseEntity<?> verifyEmail(@RequestParam String param) {
-         return ResponseEntity.ok(authService.verifyEmail(param));
+    public ResponseEntity<?> verifyEmail(@RequestParam String token) {
+         return ResponseEntity.ok(authService.verifyEmail(token));
     }
-
-    //me
 }

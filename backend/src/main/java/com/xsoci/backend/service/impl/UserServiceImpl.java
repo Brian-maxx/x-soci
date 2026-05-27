@@ -30,6 +30,9 @@ public class UserServiceImpl implements UserService {
     private final ValidationUtil validationUtil;
     private final PasswordEncoder passwordEncoder;
 
+    /**
+     * Get user by email request
+     */
     public User getUserByEmail(String email) {
         return userRepository.findByEmail(email)
             .orElseThrow(() -> 
@@ -43,12 +46,21 @@ public class UserServiceImpl implements UserService {
             );
     }
 
+    /**
+     * Update passsword of user
+     * 
+     * @param user
+     * @param password
+     */
     @Transactional
     public void updatePassword(User user, String password) {
         user.setPassword(passwordEncoder.encode(password));
         userRepository.save(user);
     }
 
+    /**
+     * Create user to access the system
+     */
     @Transactional
     public User createUser(RegisterRequest registerRequest) {
         if(userRepository.existsByEmail(registerRequest.getEmail())) {
@@ -84,6 +96,9 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
+    /**
+     * Turn on Active to access the system
+     */
     @Transactional
     public void activeUser(String email) {
         User user = userRepository.findByEmail(email)

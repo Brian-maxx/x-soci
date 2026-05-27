@@ -9,7 +9,6 @@ import com.xsoci.backend.repository.UserTokenRepository;
 import com.xsoci.backend.service.UserTokenService;
 import com.xsoci.backend.entity.User;
 import com.xsoci.backend.entity.UserToken;
-import com.xsoci.backend.util.MessageUtil;
 import com.xsoci.backend.util.TimeUtil;
 
 @Slf4j
@@ -17,7 +16,6 @@ import com.xsoci.backend.util.TimeUtil;
 @RequiredArgsConstructor
 public class UserTokenServiceImpl implements UserTokenService {
     private final UserTokenRepository userTokenRepository;
-    private final MessageUtil messageUtil;
 
     @Transactional
     @Override
@@ -37,6 +35,9 @@ public class UserTokenServiceImpl implements UserTokenService {
                 .orElse(null);
     }
 
+    /**
+     * Delete Token from Database to reduce data
+     */
     @Transactional
     @Override
     public void deleteUserToken(String token, String type) {

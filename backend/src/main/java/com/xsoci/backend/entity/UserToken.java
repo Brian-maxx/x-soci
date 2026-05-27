@@ -10,7 +10,18 @@ import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 @Entity
-@Table(name = "user_tokens")
+@Table(
+    name = "user_tokens",
+    indexes = {
+        @Index(name = "idx_token", columnList = "token")
+    },
+    uniqueConstraints = {
+        @UniqueConstraint(
+            name = "uk_token_type",
+            columnNames = {"token", "type"}
+        )
+    }
+)
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,6 +30,7 @@ import lombok.*;
 public class UserToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "token_id")
     private Long id;
 
     @NotNull

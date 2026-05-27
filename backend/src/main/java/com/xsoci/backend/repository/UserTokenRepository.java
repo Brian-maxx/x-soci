@@ -3,9 +3,10 @@ package com.xsoci.backend.repository;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.xsoci.backend.entity.UserToken;
+import com.xsoci.backend.entity.User;
 
 public interface UserTokenRepository extends JpaRepository<UserToken, Long> {
-    Optional<UserToken> findByUser(long id);
+    Optional<UserToken> findByUser(User user);
 
     Optional<UserToken> findByToken(String token);
 

@@ -3,6 +3,7 @@ package com.xsoci.backend.service.impl;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 import lombok.extern.slf4j.Slf4j;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -25,20 +26,25 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     private final ValidationUtil validationUtil;
     private final MessageUtil messageUtil;
 
+    public RefreshToken getUserByRefreshToken(String refreshToken) {
+        return refreshTokenRepository.findByToken(refreshToken)
+            .orElse(null);
+    }
+
     @Transactional
     public RefreshToken createRefreshToken(User user, String token){
         return refreshTokenRepository.save(
-            RefreshToken.builder()
+            Objects.requireNonNull(RefreshToken.builder()
                 .token(token)
                 .user(user)
                 .expiredAt(LocalDateTime.now().plusDays(7))
                 .revoked(false)
                 .createdAt(LocalDateTime.now())
-                .build()
+                .build())
         );
     }
 
-    private RefreshToken getValidRefreshToken(String refreshToken) {
+    public RefreshToken getValidRefreshToken(String refreshToken) {
         RefreshToken token = refreshTokenRepository.findByToken(refreshToken)
             .orElseThrow(() -> 
                 new CustomException(
